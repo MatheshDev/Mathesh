@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --darkbg : #222831;
+    --darkbg2 : #31363F;
+    --font1 : #EEEEEE;
+    --font2 : #76ABAE;
+}
+
+@keyframes fluid{
+    0%{
+        background-position: 0%;
+    }
+
+    50%{
+        background-position: 100%;
+    }
+
+    100%{
+        background-position: 0%;
+    }
+}
+
+.custom-nav{
+    background-color: var(--darkbg);
+}
+
+.nav-link{
+    margin: 0 50px;
+    color: white !important;
+    transition: 0.3s !important;
+}
+
+.nav-link:hover{
+    color: var(--font2) !important;
+    letter-spacing: 5px;
+    transition: 0.3s;
+}
+
+
+.home{
+    background : linear-gradient(var(--darkbg2),black);
+    height: 100vh;
+}
+
+.bg-blur{
+    backdrop-filter: blur(2000px);
+    border-radius: 20px;    
+}
+
+.home h1{
+    color: var(--font1) ;
+}
+
+.about{
+    background : linear-gradient(black,var(--darkbg));
+}
+
+.skills{
+    background : linear-gradient(var(--darkbg),var(--darkbg2));
+}
+
+.works{
+    background : linear-gradient(var(--darkbg2),var(--darkbg));
+}
+.contact{
+    background : linear-gradient(var(--darkbg),black);
+}
